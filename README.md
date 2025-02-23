@@ -24,11 +24,11 @@ Generate reports and analyze test results.
 ## 📅 Week 1: Setup and Test Case Development  
 
 ### Tasks  
-✅ Set up testing environment: Install and configure Selenium WebDriver or an equivalent framework for automated testing.  
-✅ Organize project structure: Create a structured folder for test scripts and reports.  
-✅ Develop initial test cases for basic UI functionality (e.g., navigation, button clicks, form submissions ). 
-✅ **Postman Integration:** Set up Postman for API testing and create basic test cases to verify API responses.
-✅ **Jira Integration:** Implement Jira for managing test cases and tracking issues found during testing.  
+✅ Set up testing environment: Install and configure Selenium WebDriver or an equivalent framework for automated testing.  ␣␣
+✅ Organize project structure: Create a structured folder for test scripts and reports.  ␣␣
+✅ Develop initial test cases for basic UI functionality (e.g., navigation, button clicks, form submissions ). ␣␣
+✅ **Postman Integration:** Set up Postman for API testing and create basic test cases to verify API responses.␣␣
+✅ **Jira Integration:** Implement Jira for managing test cases and tracking issues found during testing.  ␣␣
 
 ### Deliverables  
 ✔️ Functional testing environment set up (Selenium/WebDriver).  
