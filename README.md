@@ -24,9 +24,9 @@ Generate reports and analyze test results.
 ## 📅 Week 1: Setup and Test Case Development  
 
 ### Tasks  
-✅ Set up testing environment: Install and configure Selenium WebDriver or an equivalent framework for automated testing.<br>
-✅ Organize project structure: Create a structured folder for test scripts and reports.<br>
-✅ Develop initial test cases for basic UI functionality (e.g., navigation, button clicks, form submissions ).<br>
+✅ **Set up testing environment:** Install and configure Selenium WebDriver or an equivalent framework for automated testing.<br>
+✅ **Organize project structure:** Create a structured folder for test scripts and reports.<br>
+✅ **Develop initial test cases for basic UI functionality** (e.g., navigation, button clicks, form submissions ).<br>
 ✅ **Postman Integration:** Set up Postman for API testing and create basic test cases to verify API responses.<br>
 ✅ **Jira Integration:** Implement Jira for managing test cases and tracking issues found during testing.<br>
 
@@ -42,11 +42,11 @@ Generate reports and analyze test results.
 ## 📅 Week 2: Functional Testing and Report Generation  
 
 ### Tasks  
-✅ Develop functional test cases: Write detailed test cases to cover key functional workflows (e.g., user login, form submission, data processing).<br>
-✅ Automated test scripts: Automate the execution of functional tests using Selenium. <br>
-✅ Implement report generation: Integrate tools like TestNG or JUnit to generate detailed test reports with test results.<br>
-✅ API test cases: Expand API testing in Postman by adding more endpoints and verifying data . <br>
-✅ Performance testing setup: Install and configure tools for performance testing (e.g., JMeter, Gatling). <br>
+✅ **Develop functional test cases:** Write detailed test cases to cover key functional workflows (e.g., user login, form submission, data processing).<br>
+✅ **Automated test scripts:** Automate the execution of functional tests using Selenium. <br>
+✅ **Implement report generation:** Integrate tools like TestNG or JUnit to generate detailed test reports with test results.<br>
+✅ **API test cases:** Expand API testing in Postman by adding more endpoints and verifying data . <br>
+✅ **Performance testing setup:** Install and configure tools for performance testing (e.g., JMeter, Gatling). <br>
 
 ### Deliverables  
 ✔️ Comprehensive functional test cases written and automated. <br> 
@@ -59,10 +59,10 @@ Generate reports and analyze test results.
 ## 📅 Week 3: Performance and UI Testing  
 
 ### Tasks  
-✅ Develop performance test cases: Write test cases for load and stress testing using tools like JMeter or Gatling.<br>
-✅ Execute performance tests: Run performance tests on the web application to analyze response times, load handling, and scalability.<br>
-✅ UI testing: Enhance UI test cases to cover more complex scenarios (e.g., responsive design, cross-browser compatibility).<br>
-✅ Bug tracking: Log and track issues in Jira discovered during the execution of performance and UI tests.<br>
+✅ **Develop performance test cases:** Write test cases for load and stress testing using tools like JMeter or Gatling.<br>
+✅ **Execute performance tests:** Run performance tests on the web application to analyze response times, load handling, and scalability.<br>
+✅ **UI testing:** Enhance UI test cases to cover more complex scenarios (e.g., responsive design, cross-browser compatibility).<br>
+✅ **Bug tracking:** Log and track issues in Jira discovered during the execution of performance and UI tests.<br>
 
 ### Deliverables  
 ✔️ Performance tests executed and results analyzed for scalability and load performance. <br>
@@ -74,12 +74,12 @@ Generate reports and analyze test results.
 ## 📅 Week 4: Final Testing, Optimization, and Deployment  
 
 ### Tasks  
-✅ Optimize test framework: Refactor the test framework to optimize performance and reusability (e.g., using page object models).<br>
-✅ Execute full testing suite: Run the complete suite of tests (UI, functional, API, performance) on the web application.<br>
-✅ Analyze test results: Review and analyze the results, identifying any remaining issues.<br>
-✅ Generate final reports: Create detailed reports summarizing the results of all tests, including performance metrics.<br>
-✅ Documentation: Write detailed documentation on the automated testing framework, how to use it, and how to add new test cases.<br>
-✅ Deploy the framework: Make the testing framework ready for continuous integration and deployment (CI/CD) pipelines (e.g., integration with Jenkins).<br>
+✅ **Optimize test framework:** Refactor the test framework to optimize performance and reusability (e.g., using page object models).<br>
+✅ **Execute full testing suite:** Run the complete suite of tests (UI, functional, API, performance) on the web application.<br>
+✅ **Analyze test results:** Review and analyze the results, identifying any remaining issues.<br>
+✅ **Generate final reports:** Create detailed reports summarizing the results of all tests, including performance metrics.<br>
+✅ **Documentation:** Write detailed documentation on the automated testing framework, how to use it, and how to add new test cases.<br>
+✅ **Deploy the framework:** Make the testing framework ready for continuous integration and deployment (CI/CD) pipelines (e.g., integration with Jenkins).<br>
 
 ### Deliverables  
 ✔️ Fully optimized and functional automated testing framework.<br>
