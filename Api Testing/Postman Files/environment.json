@@ -1,0 +1,45 @@
+{
+	"id": "3cb9b82a-9c60-4abe-a962-430df275027a",
+	"name": "ENV",
+	"values": [
+		{
+			"key": "url",
+			"value": "https://reqres.in",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "username",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "password",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "COOKIE",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "authToken",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "URL",
+			"value": "https://reqres.in",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-04-04T20:03:54.722Z",
+	"_postman_exported_using": "Postman/11.37.5"
+}

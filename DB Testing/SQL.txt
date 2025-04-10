@@ -1,0 +1,55 @@
+//Test1 : Verify Users Table Creation
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100), email VARCHAR(100) UNIQUE);
+
+//Test2 : Verify Insertion of Multiple Users
+INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com'), ('Jane Smith', 'jane@example.com'), ('Sam Brown', 'sam@example.com'), ('Lisa White', 'lisa@example.com'), ('David Yellow', 'david@example.com'), ('Jackson Gray', 'jackson@example.com'), ('Mia Green', 'mia@example.com'), ('Oliver Black', 'oliver@example.com'), ('Jack Blue', 'jack@example.com'), ('Harper Purple', 'harper@example.com');
+
+
+//Test3 : Verify Orders Table Creation
+CREATE TABLE IF NOT EXISTS orders (order_id INT AUTO_INCREMENT PRIMARY KEY, user_id INT, order_date DATE, FOREIGN KEY (user_id) REFERENCES users(id));
+
+//Test4 : Verify Insertion of Sample Orders
+INSERT INTO orders (user_id, order_date) VALUES (1, '2025-03-23'), (3, '2025-03-18'), (5, '2025-03-19'), (7, '2025-03-17'), (2, '2025-03-22'), (9, '2025-03-16'), (4, '2025-03-21'), (8, '2025-03-20'), (10, '2025-03-14'), (6, '2025-03-15');
+
+//Test5 : Verify User and Order Data Retrieval (INNER JOIN)
+SELECT u.name, o.order_date FROM users u INNER JOIN orders o ON u.id = o.user_id;
+
+
+//Test6 : Verify Users Table Data Integrity
+SELECT * FROM users;
+
+//Test7 : Verify Orders Table Data Integrity
+SELECT * FROM orders;
+
+//Test8 : Verify Schema of Users Table
+DESCRIBE users;
+
+//Test9 : Verify Schema of Orders Table
+DESCRIBE orders;
+
+//Test10 : Test Stored Procedure for User Registration
+Full Steps 
+CREATE DATABASE IF NOT EXISTS user_registration;
+USE user_registration;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE
+);
+
+DELIMITER $$
+
+CREATE PROCEDURE register_user(IN p_name VARCHAR(100), IN p_email VARCHAR(100))
+BEGIN
+    INSERT INTO users (name, email)
+    VALUES (p_name, p_email);
+END$$
+
+DELIMITER ;
+
+CALL register_user('John Doe', 'john@example.com');
+SELECT * FROM users WHERE email = 'john@example.com';
+
+//Test11 : Ensure Backup and Restore of user_registration Database
+user_registration database, users table, and user data
