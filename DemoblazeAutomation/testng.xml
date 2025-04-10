@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Demoblaze Functional Tests" verbose="2" preserve-order="true" >
+        <parameter name="platform" value="Windows 10"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="browser" value="chrome"/>  <!-- You can change this to "firefox" to run the tests on Firefox -->
+
+
+        <classes>
+            <class name="com.demoblaze.tests.LoginInTest">
+                <methods>
+                    <include name="verify_successful_login"/>
+                    <include name="Verify_Session_Persistence"/>
+                    <include name="verify_successful_logout"/>
+                    <include name="verify_login_with_incorrect_password"/>
+                    <include name="test_login_with_unregistered_username"/>
+                    <include name="verify_login_with_empty_fields"/>
+                    <include name="verify_multiple_SQL_injection_attempts"/>
+                </methods>
+            </class>
+
+            <class name="com.demoblaze.tests.SignUpTest">
+                <methods>
+                    <include name="verify_successful_signup"/>
+                    <include name="verify_signup_with_existing_username"/>
+                    <include name="verify_signup_with_empty_fields"/>
+                    <include name="verify_signup_fields_are_empty_after_successful_signup"/>
+                </methods>
+            </class>
+
+
+            <class name="com.demoblaze.tests.ProductCatalogTest">
+                <methods>
+                    <include name="verify_phone_category_filter"/>
+                    <include name="verify_laptop_category_filter"/>
+                    <include name="verify_monitor_category_filter"/>
+                    <include name="verify_pagination"/>
+                    <include name="verify_same_products_when_clicking_prev"/>
+                    <include name="verify_products_loads"/>
+                    <include name="verify_all_product_names_displayed"/>
+                    <include name="verify_all_product_description_displayed"/>
+                    <include name="ensure_unique_products"/>
+                    <include name="verify_all_product_prices_displayed"/>
+                </methods>
+            </class>
+
+
+            <class name="com.demoblaze.tests.CartTest">
+                <methods>
+                    <include name="verify_adding_product_to_cart_by_message"/>
+                    <include name="verify_adding_product_to_cart_by_cart"/>
+                    <include name="verify_delete_item_from_cart"/>
+                    <include name="verify_total_price_calculation_in_cart"/>
+                    <include name="Verify_Empty_Cart_no_item_added"/>
+                    <include name="verify_cart_persistence_after_refresh"/>
+                    <include name="verify_cart_persistence_after_logout"/>
+                    <include name="verify_forbid_checkout_if_cart_is_empty"/>
+                    <include name="verify_proceeding_to_checkout"/>
+                    <include name="verify_order_placement_with_valid_details"/>
+                    <include name="verify_order_placement_with_invalid_credit_card"/>
+                    <include name="verify_order_placement_with_missing_details"/>
+                </methods>
+            </class>
+            <class name="com.demoblaze.tests.NavigationTest">
+                <methods>
+                    <include name="verify_logo_button_click_functionality"/>
+                    <include name="verify_home_nav_button_click_functionality"/>
+                    <include name="verify_contact_nav_button_click_functionality"/>
+                    <include name="verify_Forbid_submitting_contact_form_with_missing_details"/>
+                    <include name="verify_about_us_button_click_functionality"/>
+                    <include name="verify_closing_about_us_modal"/>
+                    <include name="verify_media_load__in_about_us"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
